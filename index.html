@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>typeracer</title>
+</head>
+
+<body>
+    <div class="top">
+        <div>
+            <button class="start" onclick="startGame()">Start</button>
+            <button class="game-on" onclick="stopGame()" style="display:none; background-color: red;">Game on</button>
+        </div>
+        <div>
+            Timer: <span class="timer">00:00</span>
+        </div>
+        <div>
+            speed: <span class="speed"></span>
+        </div>
+    </div>
+    <div class="container" tabindex="0">
+
+        <span class="correct"></span><span class="wrong"></span><span class="remaining"></span>
+
+    </div>
+    <div>
+        <button class="change" onclick="changeText()">Change Text?</button>
+    </div>
+    <footer>© Copyright 2025</footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

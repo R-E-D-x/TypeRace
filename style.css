@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 50%;
+    font-size: 2rem;
+    box-shadow: 0px 1px 15px gray;
+    padding: 20px 200px;
+
+}
+
+
+
+.remaining {
+    animation: cursor 2s 1s linear infinite;
+    opacity: 0.5;
+}
+
+.correct {
+    background-color: rgba(112, 248, 112, 0.534);
+}
+
+.wrong {
+    background-color: rgba(255, 0, 0, 0.411);
+}
+
+.top {
+    display: flex;
+    flex-wrap: wrap;
+    width: 30vw;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button {
+    height: 70px;
+    width: 180px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0px 1px 15px gray;
+    background-color: green;
+    color: white;
+    font-size: 2rem;
+}
+
+.change {
+    font-size: 1.3rem;
+}
+
+p {
+    box-shadow: 0px 1px 15px gray;
+    padding: 0 60px;
+    width: fit-content;
+    overflow: hidden;
+}
+
+p:hover span {
+    position: relative;
+    /* animation: display 1s linear forwards; */
+    letter-spacing: 3px;
+    transition: 0.5s;
+}
+
+
+@keyframes display {
+    0% {
+        left: 300px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+@keyframes cursor {
+    0% {
+        border-left: 2px solid rgb(0, 0, 0, 1);
+    }
+
+    50% {
+        border-left: 2px solid rgb(0, 0, 0, 0);
+    }
+
+    100% {
+        border-left: 2px solid rgb(0, 0, 0, 1);
+    }
+}
